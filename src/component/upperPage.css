@@ -1,0 +1,71 @@
+.UpperPage-Container {
+  width: 100%;
+  background-image: linear-gradient(to right, #ffe1ba, #fff1d5);
+}
+
+.UpperPage {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.UpperPage-left {
+  flex: 1;
+}
+
+.UpperPage-left > h1 {
+  width: 250px;
+  /* background: red; */
+}
+
+.UpperPage-left > p {
+  width: 300px;
+}
+
+.seeMore {
+  background: none;
+  border: 0px;
+  font-size: 8px;
+  padding: 0px 16px;
+  cursor: pointer;
+}
+
+.UpperPage-right {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.UpperPage-right > img {
+  width: 90%;
+  height: auto;
+  /* background-color: red; */
+}
+
+@media only screen and (max-width: 760px) {
+  .UpperPage {
+    flex-direction: column-reverse;
+  }
+
+  .UpperPage > .UpperPage-left > h1 {
+    font-size: 24px;
+  }
+
+  .UpperPage-left > p {
+    font-size: 12px;
+  }
+ 
+}
+
+@media  screen and (max-width: 420px) {
+
+  .UpperPage-left > p {
+    display: none;
+  }
+}
+

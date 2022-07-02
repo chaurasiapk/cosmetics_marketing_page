@@ -1,0 +1,90 @@
+.nav-bar-container {
+  background: #ffd4a3;
+  width: 100%;
+}
+
+.nav-bar {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar button {
+  border: 0px;
+  border-radius: 0px;
+  background: none;
+  cursor: pointer;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-nav {
+  flex: 1;
+}
+
+.menu-bar {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar > ul {
+  list-style: none;
+  display: flex;
+}
+.menu-bar > ul > li {
+  padding: 4px 20px;
+}
+
+
+.three-Bars i {
+  font-size: 20px;
+  display: none;
+}
+
+.menu-bar > input {
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+  .menu-bar {
+    justify-content: flex-end;
+    position: relative;
+  }
+  .three-Bars i {
+    font-size: 20px;
+
+    display: block;
+  }
+
+  .menu-bar > ul {
+    background: #ffd4a3;
+    position: absolute;
+    top: 32px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 200%;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+
+  .menu-bar > input:checked ~ ul {
+    height: 106px;
+  }
+
+  .menu-bar > ul > li {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+  }
+}

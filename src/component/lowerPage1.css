@@ -1,0 +1,123 @@
+.LowerPage1-Container{
+    width: 100%;
+    background: #fefce3;
+}
+
+.LowerPage1{
+    
+
+    max-width: 1080px;
+     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+    gap: 40px;
+}
+
+.LowerPage1-up{
+    text-align: center;
+    
+    width: 100%;
+}
+
+.LowerPage1-down{
+   
+    width: 100%;
+    
+   
+
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:12px;
+    flex-wrap: wrap;
+  
+
+ 
+}
+
+
+
+.card-body{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid rgb(58, 54, 54); */
+    border-radius: 24px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 20px;
+
+    position: relative;
+
+
+}
+
+.card-body>button{
+   width: 80px; 
+    padding: 4px  ;
+}
+
+.card-image{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    top: -15%;
+    /* background: red; */
+    text-align: center;
+}
+
+
+.card-image>img{
+   width: 50%;
+   height: 100%;
+   /* background: red; */
+  
+}
+
+
+
+@media only screen and (max-width: 920px){
+
+    .card-container{
+     gap:50px;
+    }
+    
+ 
+     
+ }
+
+
+
+@media only screen and (max-width: 770px){
+
+    .card-container{
+     gap:50px;
+    }
+
+    
+    
+ 
+     
+ }
+
+
+@media only screen and (max-width: 480px){
+
+    .card-container{
+     gap:50px;
+    }
+    
+ 
+     
+ }
+ 
