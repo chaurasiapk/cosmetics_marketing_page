@@ -1,9 +1,9 @@
-.button1{
-   padding: 4px  12px;
-   font-size: 8px;
-   border-radius: 12px;
-   border: 0px;
-   background: #323430;
-   color: aliceblue;
-   cursor: pointer;
+.button1 {
+  padding: 4px 12px;
+  font-size: 8px;
+  border-radius: 12px;
+  border: 0px;
+  background: #323430;
+  color: aliceblue;
+  cursor: pointer;
 }

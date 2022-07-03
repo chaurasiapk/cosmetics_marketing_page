@@ -9,14 +9,12 @@ import "remixicon/fonts/remixicon.css";
 import "./lowerPage1.css";
 
 const Cards = (props) => {
-  
   return (
     <div className="card">
       <div className="card-body">
         <div className="card-image">
-          <img src={props.source} alt="image1"/>
+          <img src={props.source} alt="image1" />
         </div>
-
         <div className="card-heading">
           <h5 style={{ textAlign: "center" }}>
             {props.heading}
@@ -24,7 +22,6 @@ const Cards = (props) => {
             {props.type}
           </h5>
         </div>
-
         <div className="card-rating">
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
@@ -32,11 +29,9 @@ const Cards = (props) => {
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
         </div>
-
         <div className="card-price">
           <p>$ {props.price}</p>
         </div>
-
         <Button1 label="Buy Now" />
       </div>
     </div>
@@ -84,8 +79,16 @@ export const LowerPage1 = () => {
 
         <div className="LowerPage1-down">
           <div className="card-container">
-            {product.map((card , index) => {
-              return <Cards key={index} heading={card.heading} type={card.type} price={card.price} source={card.source} />;
+            {product.map((card, index) => {
+              return (
+                <Cards
+                  key={index}
+                  heading={card.heading}
+                  type={card.type}
+                  price={card.price}
+                  source={card.source}
+                />
+              );
             })}
           </div>
         </div>

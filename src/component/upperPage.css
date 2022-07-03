@@ -10,7 +10,6 @@
   padding: 12px 20px;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .UpperPage-left {
@@ -19,7 +18,6 @@
 
 .UpperPage-left > h1 {
   width: 250px;
-  /* background: red; */
 }
 
 .UpperPage-left > p {
@@ -44,7 +42,6 @@
 .UpperPage-right > img {
   width: 90%;
   height: auto;
-  /* background-color: red; */
 }
 
 @media only screen and (max-width: 760px) {
@@ -59,13 +56,10 @@
   .UpperPage-left > p {
     font-size: 12px;
   }
- 
 }
 
-@media  screen and (max-width: 420px) {
-
+@media screen and (max-width: 420px) {
   .UpperPage-left > p {
     display: none;
   }
 }
-
