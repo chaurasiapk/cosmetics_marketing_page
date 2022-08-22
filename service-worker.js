@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cosmetics_marketing_page/precache-manifest.1c332a7797d801193a55ad25b52810e4.js"
+  "/cosmetics_marketing_page/precache-manifest.33a71c3b4c41da01bcd219ba27812bb1.js"
 );
 
 workbox.clientsClaim();
