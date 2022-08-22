@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/cosmetics_marketing_page/static/media/image1.b9361917.png"
   },
   {
-    "revision": "9915fef980fa539085da55b84dfde760",
-    "url": "/cosmetics_marketing_page/static/media/remixicon.9915fef9.woff2"
+    "revision": "31d28485e1cf7369272270fd730327c0",
+    "url": "/cosmetics_marketing_page/static/media/remixicon.31d28485.eot"
   },
   {
     "revision": "881fbc46361e0c0e5f003c159b2f3005",
     "url": "/cosmetics_marketing_page/static/media/remixicon.881fbc46.woff"
   },
   {
-    "revision": "31d28485e1cf7369272270fd730327c0",
-    "url": "/cosmetics_marketing_page/static/media/remixicon.31d28485.eot"
+    "revision": "9915fef980fa539085da55b84dfde760",
+    "url": "/cosmetics_marketing_page/static/media/remixicon.9915fef9.woff2"
   },
   {
     "revision": "888e61f04316f10bddfff7bee10c6dd0",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/cosmetics_marketing_page/static/media/image7.25dec18f.png"
   },
   {
-    "revision": "7b70231a1ab25723c852462e80bcbe84",
+    "revision": "a212167020558ba5b8be108c7aca89b4",
     "url": "/cosmetics_marketing_page/index.html"
   }
 ];
