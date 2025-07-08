@@ -42,11 +42,118 @@ export const Footer = () => {
 
         {/* Column 4: Get Our App */}
         <div className="footer__column-4">
-          <h5>Get Our App</h5>
+          <h5>Get Social Link</h5>
 
-          <i className="ri-google-play-fill"></i>
-          <i className="ri-apple-fill"></i>
+          <div style={{ display: "flex", gap: "12px", marginBottom: "12px" , justifyContent: "center" }}>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://github.com/chaurasiapk",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              title="GitHub"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <i
+                className="ri-github-fill"
+                style={{ fontSize: 24, color: "#fefce3" }}
+              ></i>
+            </button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/pradeepchaurasia93",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              title="LinkedIn"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <i
+                className="ri-linkedin-box-fill"
+                style={{ fontSize: 24, color: "#fefce3" }}
+              ></i>
+            </button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://chaurasiapk.github.io/profile",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              title="Portfolio"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <i
+                className="ri-user-3-fill"
+                style={{ fontSize: 24, color: "#fefce3" }}
+              ></i>
+            </button>
+            <button
+              onClick={() =>
+                window.open("https://app.enhancv.com/share/84d2a9c0/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic", "_blank", "noopener,noreferrer")
+              }
+              title="Resume"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <i
+                className="ri-file-list-3-fill"
+                style={{ fontSize: 24, color: "#fefce3" }}
+              ></i>
+            </button>
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:chaurasia.pk6@@gmail.com")
+              }
+              title="Email"
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <i
+                className="ri-mail-fill"
+                style={{ fontSize: 24, color: "#fefce3" }}
+              ></i>
+            </button>
+          </div>
         </div>
+      </div>
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: "24px",
+          fontSize: "14px",
+          color: "#fefce3",
+        }}
+      >
+        © 2025 . All rights reserved. Made with ❤️ of pradeep
       </div>
     </div>
   );
