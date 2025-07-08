@@ -1,12 +1,14 @@
 // Import React, images, and components
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import image2 from "../../assets/images/image2.png";
 import image3 from "../../assets/images/image3.png";
 import image4 from "../../assets/images/image4.png";
 import image5 from "../../assets/images/image5.png";
 import { Button1 } from "../Button/Button";
-
 import "./LowerPage1.scss";
+gsap.registerPlugin(ScrollTrigger);
 
 // Cards component: displays a product card with image, heading, rating, price, and button
 const Cards = (props) => {
@@ -41,6 +43,7 @@ const Cards = (props) => {
 
 // LowerPage1 component: displays a section with a heading and a list of product cards
 export const LowerPage1 = () => {
+  const sectionRef = useRef(null);
   // Product data array
   const product = [
     {
@@ -69,8 +72,42 @@ export const LowerPage1 = () => {
     },
   ];
 
+  useEffect(() => {
+    const el = sectionRef.current;
+    gsap.fromTo(
+      el.querySelector(".lower-page1__up h3"),
+      { opacity: 0, x: -80 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        },
+      }
+    );
+    const cards = el.querySelectorAll(".card");
+    cards.forEach((card, i) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: i % 2 === 0 ? -80 : 80 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.8,
+          delay: 0.2 + i * 0.15,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div className="lower-page1__container">
+    <div ref={sectionRef} className="lower-page1__container">
       <div className="lower-page1">
         {/* Section heading */}
         <div className="lower-page1__up">

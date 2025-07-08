@@ -1,13 +1,32 @@
 // Import React, styles, and components
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button1 } from "../Button/Button";
-
 import "./LowerPage3.scss";
+gsap.registerPlugin(ScrollTrigger);
 
 // LowerPage3 component: displays a section with content and a button
 export const LowerPage3 = () => {
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    const el = sectionRef.current;
+    gsap.fromTo(
+      el.querySelector(".lower-page3__content"),
+      { opacity: 0, scale: 0.7 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
   return (
-    <div className="lower-page3__container">
+    <div ref={sectionRef} className="lower-page3__container">
       <div className="lower-page3">
         <div className="lower-page3__content">
           <h4>Unleash Your Inner Glow</h4>

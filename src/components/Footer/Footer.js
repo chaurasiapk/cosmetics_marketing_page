@@ -1,11 +1,32 @@
 // Import React and styles
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Footer.scss";
+gsap.registerPlugin(ScrollTrigger);
 
 // Footer component: renders the footer with four columns of content and icons
 export const Footer = () => {
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    const el = sectionRef.current;
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 60, scale: 0.97 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+        },
+      }
+    );
+  }, []);
   return (
-    <div className="footer__container">
+    <div ref={sectionRef} className="footer__container">
       <div className="footer">
         {/* Column 1: About Us */}
         <div className="footer__column-1">
@@ -40,7 +61,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4: Get Our App */}
+        {/* Column 4: Get Social Link */}
         <div className="footer__column-4">
           <h5>Get Social Link</h5>
 
