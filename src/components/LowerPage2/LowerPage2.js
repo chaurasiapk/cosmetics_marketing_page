@@ -50,7 +50,7 @@ const LowerPage2Item = (props) => {
   return (
     <div ref={itemRef} className={`lower-page2__item  ${props.class}`}>
       <div ref={leftRef} className="lower-page2__item-left">
-        <div className="lower-page2__item-image">
+        <div className="lower-page2__item-image scale-hover">
           <img src={props.image} alt="" />
         </div>
       </div>

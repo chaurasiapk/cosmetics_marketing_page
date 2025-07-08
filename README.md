@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Cosmetics Marketing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Screenshot](screenshots/screenshot.png)
 
-## Available Scripts
+A visually stunning, interactive cosmetics marketing landing page built with React, GSAP, Lenis, and Three.js. This project demonstrates advanced UI/UX, scroll-based storytelling, 3D/2D animation, and modern web best practices.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Hero Section:**
+  - Animated headline (split-text reveal)
+  - 3D floating product (Three.js)
+  - Parallax background and animated sparkles
+  - Real product image
+- **Animated Navbar:**
+  - Smooth fade-in and staggered menu animation
+- **Product Cards:**
+  - Scroll-triggered split-text animation
+  - 3D tilt effect on hover
+- **Buy Now Buttons:**
+  - Dramatic scale-up on hover
+- **LowerPage2:**
+  - Animated sparkles/circles
+  - Parallax effect on product images
+  - Opposite-direction content entrance
+- **LowerPage3:**
+  - Zoom-in, parallax, and floating elements
+- **Footer:**
+  - Animated entrance
+  - Social/contact icons
+- **Smooth Scrolling:**
+  - Powered by Lenis
+- **Fully Responsive & Mobile Friendly**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (functional components, hooks)
+- **GSAP** (ScrollTrigger, advanced animation)
+- **Lenis** (smooth scrolling)
+- **Three.js** (3D product in hero)
+- **Remix Icon** (iconography)
+- **SCSS** (modular, maintainable styles)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/your-username/cosmetics_marketing_page.git
+   cd cosmetics_marketing_page
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+4. **Open in your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🖌️ Customization
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Product Images:**
+  - Replace images in `src/assets/images/` for your own products.
+- **3D Model:**
+  - Swap the Three.js cube for a GLTF/GLB model for a real product showcase.
+- **Colors & Branding:**
+  - Edit SCSS files for your brand palette.
+- **Content:**
+  - Update text, links, and icons in the respective component files.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+  components/
+    Button/
+    Footer/
+    LowerPage1/
+    LowerPage2/
+    LowerPage3/
+    Navbar/
+    UpperPage/
+  assets/
+    images/
+  styles/
+    App.scss
+  App.js
+  index.js
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Built with ❤️ by Pradeep Chaurasia and AI.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+- [LinkedIn](https://www.linkedin.com/in/pradeepchaurasia93)
+- [GitHub](https://github.com/chaurasiapk)
+- [Portfolio](https://chaurasiapk.github.io/profile)
+- Email: chaurasia.pk6@gmail.com

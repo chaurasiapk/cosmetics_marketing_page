@@ -1,13 +1,40 @@
 // Import React and styles
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
 import "./Navbar.scss";
 
 // NavBar component: renders the navigation bar with menu and responsive toggle
 export const NavBar = () => {
   // State to handle menu toggle for mobile view
   const [clicked, setClicked] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const el = navRef.current;
+    // Animate navbar fade in and slide down
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: -40 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+    // Animate menu buttons with stagger
+    const menuButtons = el.querySelectorAll(".navbar__menu-bar ul button");
+    gsap.fromTo(
+      menuButtons,
+      { opacity: 0, y: -20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        stagger: 0.12,
+        delay: 0.3,
+        ease: "power3.out",
+      }
+    );
+  }, []);
+
   return (
-    <div className="navbar__container">
+    <div ref={navRef} className="navbar__container">
       <div className="navbar">
         {/* Left section: Brand button */}
         <div className="navbar__left">
