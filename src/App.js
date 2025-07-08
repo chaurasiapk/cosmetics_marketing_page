@@ -5,7 +5,7 @@ import { LowerPage1 } from './component/lowerPage1';
 import { LowerPage2 } from './component/lowerPage2';
 import { LowerPage3 } from './component/lowerPage3';
 import { Footer } from './component/footer';
-import './App.css';
+import './App.scss';
 
 const App = ()=>{
   return(
