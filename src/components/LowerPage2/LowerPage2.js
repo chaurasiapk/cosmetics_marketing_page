@@ -1,11 +1,13 @@
+// Import React, styles, images, and components
 import React from "react";
 import "./LowerPage2.scss";
-import image1 from '../../assets/images/image1.png';
-import image6 from '../../assets/images/image6.png';
-import image7 from '../../assets/images/image7.png';
+import image1 from "../../assets/images/image1.png";
+import image6 from "../../assets/images/image6.png";
+import image7 from "../../assets/images/image7.png";
 
-import { Button1 } from '../Button/Button';
+import { Button1 } from "../Button/Button";
 
+// LowerPage2Item component: displays a single item with image, heading, description, and button
 const LowerPage2Item = (props) => {
   return (
     <div className={`lower-page2__item  ${props.class}`}>
@@ -26,7 +28,9 @@ const LowerPage2Item = (props) => {
   );
 };
 
+// LowerPage2 component: displays a list of items with alternating layouts
 export const LowerPage2 = () => {
+  // Items data array
   const items = [
     {
       class: "item-oud",

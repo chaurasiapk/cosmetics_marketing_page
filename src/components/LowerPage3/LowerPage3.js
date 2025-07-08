@@ -1,8 +1,10 @@
+// Import React, styles, and components
 import React from "react";
-import { Button1 } from '../Button/Button';
+import { Button1 } from "../Button/Button";
 
 import "./LowerPage3.scss";
 
+// LowerPage3 component: displays a section with content and a button
 export const LowerPage3 = () => {
   return (
     <div className="lower-page3__container">

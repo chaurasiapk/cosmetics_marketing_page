@@ -1,14 +1,18 @@
+// Import React and all main page components
 import React from "react";
-import { NavBar } from "./components/Navbar/Navbar";
-import { UpperPage } from "./components/UpperPage/UpperPage";
-import { LowerPage1 } from "./components/LowerPage1/LowerPage1";
-import { LowerPage2 } from "./components/LowerPage2/LowerPage2";
-import { LowerPage3 } from "./components/LowerPage3/LowerPage3";
-import { Footer } from "./components/Footer/Footer";
-import "./styles/App.scss";
-
+import {
+  Footer,
+  LowerPage1,
+  LowerPage2,
+  LowerPage3,
+  NavBar,
+  UpperPage,
+} from "./components";
 import "remixicon/fonts/remixicon.css";
 
+import "./styles/App.scss";
+
+// App component: main entry point for the page layout
 const App = () => {
   return (
     <>

@@ -1,9 +1,11 @@
+// LowerPage3 container styles
 .lower-page3__container {
   width: 100%;
   height: auto;
   background: #fefce3;
 }
 
+// LowerPage3 main layout
 .lower-page3 {
   max-width: 1080px;
   width: 100%;
@@ -13,6 +15,7 @@
   justify-content: center;
 }
 
+// Content box styles
 .lower-page3__content {
   border: 1px solid gray;
   border-radius: 8px;
@@ -31,6 +34,7 @@
   width: 80%;
   text-align: center;
 }
+
 .lower-page3__content > button {
   width: 80px;
 }

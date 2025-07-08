@@ -1,21 +1,24 @@
+// LowerPage2 container styles
 .lower-page2__container {
   width: 100%;
   height: auto;
 }
 
+// LowerPage2 main layout
 .lower-page2 {
   width: 100%;
   height: auto;
 }
 
+// Item layout
 .lower-page2__item {
   width: 100%;
   padding: 50px 0px;
-
   display: flex;
   flex-wrap: wrap;
 }
 
+// Alternating item backgrounds
 .lower-page2 .item-oud {
   flex-direction: row;
   background: #ecceb1;
@@ -26,15 +29,16 @@
   background: #fefccb;
 }
 
+// Item left section (image)
 .lower-page2__item-left {
   flex: 1;
   height: auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+// Item image styles
 .lower-page2__item-image {
   margin: 0px 20px;
   border: 1px solid gray;
@@ -48,6 +52,7 @@
   width: 100%;
 }
 
+// Item right section (details)
 .lower-page2__item-right {
   flex: 1;
   display: flex;
@@ -55,6 +60,7 @@
   align-items: center;
 }
 
+// Item details box
 .lower-page2__item-details {
   border-radius: 8px;
   width: 300px;

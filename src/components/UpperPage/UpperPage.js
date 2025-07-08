@@ -1,12 +1,15 @@
+// Import React, styles, images, and components
 import React from "react";
 import "./UpperPage.scss";
-import image1 from '../../assets/images/image1.png';
-import { Button1 } from '../Button/Button';
+import image1 from "../../assets/images/image1.png";
+import { Button1 } from "../Button/Button";
 
+// UpperPage component: displays the top section with heading, description, image, and buttons
 export const UpperPage = () => {
   return (
     <div className="upper-page__container">
       <div className="upper-page">
+        {/* Left section: Heading, description, and buttons */}
         <div className="upper-page__left">
           <h1>Discover Good Karma</h1>
           <p>
@@ -17,6 +20,7 @@ export const UpperPage = () => {
           <button className="upper-page__see-more">See more...</button>
         </div>
 
+        {/* Right section: Image */}
         <div className="upper-page__right">
           <img src={image1} alt="image1" />
         </div>
