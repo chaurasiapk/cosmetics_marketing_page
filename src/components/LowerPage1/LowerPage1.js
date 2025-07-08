@@ -1,35 +1,34 @@
 import React from "react";
-import image2 from "./images/image2.png";
-import image3 from "./images/image3.png";
-import image4 from "./images/image4.png";
-import image5 from "./images/image5.png";
-import { Button1 } from "./button1";
-import "remixicon/fonts/remixicon.css";
+import image2 from '../../assets/images/image2.png';
+import image3 from '../../assets/images/image3.png';
+import image4 from '../../assets/images/image4.png';
+import image5 from '../../assets/images/image5.png';
+import { Button1 } from '../Button/Button';
 
-import "./lowerPage1.css";
+import "./LowerPage1.scss";
 
 const Cards = (props) => {
   return (
     <div className="card">
-      <div className="card-body">
-        <div className="card-image">
+      <div className="card__body">
+        <div className="card__image">
           <img src={props.source} alt="image1" />
         </div>
-        <div className="card-heading">
+        <div className="card__heading">
           <h5 style={{ textAlign: "center" }}>
             {props.heading}
             <br />
             {props.type}
           </h5>
         </div>
-        <div className="card-rating">
+        <div className="card__rating">
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
           <i className="ri-star-s-fill"></i>
         </div>
-        <div className="card-price">
+        <div className="card__price">
           <p>$ {props.price}</p>
         </div>
         <Button1 label="Buy Now" />
@@ -67,9 +66,9 @@ export const LowerPage1 = () => {
   ];
 
   return (
-    <div className="LowerPage1-Container">
-      <div className="LowerPage1">
-        <div className="LowerPage1-up">
+    <div className="lower-page1__container">
+      <div className="lower-page1">
+        <div className="lower-page1__up">
           <h3>
             Healthy Hair,
             <br />
@@ -77,7 +76,7 @@ export const LowerPage1 = () => {
           </h3>
         </div>
 
-        <div className="LowerPage1-down">
+        <div className="lower-page1__down">
           <div className="card-container">
             {product.map((card, index) => {
               return (

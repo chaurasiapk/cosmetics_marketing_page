@@ -1,13 +1,13 @@
 import React from "react";
-import { Button1 } from "./button1";
+import { Button1 } from '../Button/Button';
 
-import "./lowerPage3.css";
+import "./LowerPage3.scss";
 
 export const LowerPage3 = () => {
   return (
-    <div className="lowerPage3-container">
-      <div className="lowerPage3">
-        <div className="lowerPage3-content">
+    <div className="lower-page3__container">
+      <div className="lower-page3">
+        <div className="lower-page3__content">
           <h4>Pngtree provides HQ Amazing Skin care</h4>
           <p>
             Use these free 3d,bottle,stereoscopic PNG transparent background.

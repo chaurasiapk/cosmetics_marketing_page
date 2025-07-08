@@ -1,27 +1,25 @@
-import React from 'react';
-import { NavBar } from './component/navbar';
-import { UpperPage } from './component/upperPage';
-import { LowerPage1 } from './component/lowerPage1';
-import { LowerPage2 } from './component/lowerPage2';
-import { LowerPage3 } from './component/lowerPage3';
-import { Footer } from './component/footer';
-import './App.scss';
+import React from "react";
+import { NavBar } from "./components/Navbar/Navbar";
+import { UpperPage } from "./components/UpperPage/UpperPage";
+import { LowerPage1 } from "./components/LowerPage1/LowerPage1";
+import { LowerPage2 } from "./components/LowerPage2/LowerPage2";
+import { LowerPage3 } from "./components/LowerPage3/LowerPage3";
+import { Footer } from "./components/Footer/Footer";
+import "./styles/App.scss";
 
-const App = ()=>{
-  return(
+import "remixicon/fonts/remixicon.css";
+
+const App = () => {
+  return (
     <>
-    
-    <NavBar />
-    <UpperPage />
-    <LowerPage1 />
-    <LowerPage2 />
-    <LowerPage3 />
-    <Footer />
-
-    
+      <NavBar />
+      <UpperPage />
+      <LowerPage1 />
+      <LowerPage2 />
+      <LowerPage3 />
+      <Footer />
     </>
   );
-
-}
+};
 
 export default App;

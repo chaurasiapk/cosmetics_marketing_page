@@ -1,9 +1,9 @@
-.LowerPage1-Container {
+.lower-page1__container {
   width: 100%;
   background: #fefce3;
 }
 
-.LowerPage1 {
+.lower-page1 {
   max-width: 1080px;
   margin: auto;
   display: flex;
@@ -13,12 +13,12 @@
   gap: 40px;
 }
 
-.LowerPage1-up {
+.lower-page1__up {
   text-align: center;
   width: 100%;
 }
 
-.LowerPage1-down {
+.lower-page1__down {
   width: 100%;
 }
 
@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-.card-body {
+.card {
   width: 250px;
   height: 250px;
   border-radius: 24px;
@@ -45,12 +45,12 @@
   position: relative;
 }
 
-.card-body > button {
+.card__body {
   width: 80px;
   padding: 4px;
 }
 
-.card-image {
+.card__image {
   width: 80%;
   height: 150px;
   position: absolute;
@@ -59,9 +59,21 @@
   text-align: center;
 }
 
-.card-image > img {
+.card__image > img {
   width: 50%;
   height: 100%;
+}
+
+.card__heading {
+  // ... existing code ...
+}
+
+.card__rating {
+  // ... existing code ...
+}
+
+.card__price {
+  // ... existing code ...
 }
 
 @media only screen and (max-width: 920px) {

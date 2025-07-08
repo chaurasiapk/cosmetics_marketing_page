@@ -1,22 +1,22 @@
 import React from "react";
-import "./lowerPage2.css";
-import image1 from "./images/image1.png";
-import image6 from "./images/image6.png";
-import image7 from "./images/image7.png";
+import "./LowerPage2.scss";
+import image1 from '../../assets/images/image1.png';
+import image6 from '../../assets/images/image6.png';
+import image7 from '../../assets/images/image7.png';
 
-import { Button1 } from "./button1";
+import { Button1 } from '../Button/Button';
 
 const LowerPage2Item = (props) => {
   return (
-    <div className={`item  ${props.class}`}>
-      <div className="item-left">
-        <div className="item-image">
+    <div className={`lower-page2__item  ${props.class}`}>
+      <div className="lower-page2__item-left">
+        <div className="lower-page2__item-image">
           <img src={props.image} alt="" />
         </div>
       </div>
 
-      <div className="item-right">
-        <div className="item-details">
+      <div className="lower-page2__item-right">
+        <div className="lower-page2__item-details">
           <h4>{props.heading}</h4>
           <p>{props.describtion}</p>
           <Button1 label="Buy Now" />
@@ -57,8 +57,8 @@ export const LowerPage2 = () => {
   ];
 
   return (
-    <div className="lowerPage2-container">
-      <div className="lowerPage2">
+    <div className="lower-page2__container">
+      <div className="lower-page2">
         {items.map((item, index) => {
           return (
             <LowerPage2Item

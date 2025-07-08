@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import "./navbar.css";
-import "remixicon/fonts/remixicon.css";
+import "./Navbar.scss";
 
 export const NavBar = () => {
   const [clicked, setClicked] = useState(false);
   return (
-    <div className="nav-bar-container">
-      <div className="nav-bar">
-        <div className="left-nav">
+    <div className="navbar__container">
+      <div className="navbar">
+        <div className="navbar__left">
           <button>
             <h3>Karma</h3>
           </button>
         </div>
 
-        <div className="right-nav">
-          <div className="menu-bar">
+        <div className="navbar__right">
+          <div className="navbar__menu-bar">
             <input type="checkbox" id="checkBox" />
             <ul>
               <li>
-                <button>Shop</button>
+                <button className="btn">Shop</button>
               </li>
               <li>
                 <button>About</button>
@@ -32,7 +31,7 @@ export const NavBar = () => {
             </ul>
 
             <div
-              className="three-Bars"
+              className="navbar__three-bars"
               onClick={() => {
                 setClicked(clicked ? false : true);
               }}

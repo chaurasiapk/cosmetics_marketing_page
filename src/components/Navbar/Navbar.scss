@@ -1,9 +1,9 @@
-.nav-bar-container {
+.navbar__container {
   background: #ffd4a3;
   width: 100%;
 }
 
-.nav-bar {
+.navbar {
   max-width: 1080px;
   margin: auto;
   display: flex;
@@ -12,22 +12,22 @@
   align-items: center;
 }
 
-.nav-bar button {
+.navbar button {
   border: 0px;
   border-radius: 0px;
   background: none;
   cursor: pointer;
 }
 
-.left-nav {
+.navbar__left {
   flex: 1;
 }
 
-.right-nav {
+.navbar__right {
   flex: 1;
 }
 
-.menu-bar {
+.navbar__menu-bar {
   width: 100%;
 
   display: flex;
@@ -35,35 +35,35 @@
   justify-content: space-between;
 }
 
-.menu-bar > ul {
+.navbar__menu-bar > ul {
   list-style: none;
   display: flex;
 }
-.menu-bar > ul > li {
+.navbar__menu-bar > ul > li {
   padding: 4px 20px;
 }
 
-.three-Bars i {
+.navbar__three-bars i {
   font-size: 20px;
   display: none;
 }
 
-.menu-bar > input {
+.navbar__menu-bar > input {
   display: none;
 }
 
 @media only screen and (max-width: 740px) {
-  .menu-bar {
+  .navbar__menu-bar {
     justify-content: flex-end;
     position: relative;
   }
-  .three-Bars i {
+  .navbar__three-bars i {
     font-size: 20px;
 
     display: block;
   }
 
-  .menu-bar > ul {
+  .navbar__menu-bar > ul {
     background: #ffd4a3;
     position: absolute;
     top: 32px;
@@ -77,11 +77,11 @@
     transition: height 0.5s;
   }
 
-  .menu-bar > input:checked ~ ul {
+  .navbar__menu-bar > input:checked ~ ul {
     height: 106px;
   }
 
-  .menu-bar > ul > li {
+  .navbar__menu-bar > ul > li {
     width: 100%;
     text-align: center;
     border-radius: 4px;

@@ -1,10 +1,10 @@
-.lowerPage3-container {
+.lower-page3__container {
   width: 100%;
   height: auto;
   background: #fefce3;
 }
 
-.lowerPage3 {
+.lower-page3 {
   max-width: 1080px;
   width: 100%;
   margin: auto;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.lowerPage3-content {
+.lower-page3__content {
   border: 1px solid gray;
   border-radius: 8px;
   width: 50%;
@@ -26,11 +26,11 @@
   gap: 12px;
 }
 
-.lowerPage3-content > p {
+.lower-page3__content > p {
   font-size: 12px;
   width: 80%;
   text-align: center;
 }
-.lowerPage3-content > button {
+.lower-page3__content > button {
   width: 80px;
 }
