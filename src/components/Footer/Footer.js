@@ -7,42 +7,42 @@ export const Footer = () => {
   return (
     <div className="footer__container">
       <div className="footer">
-        {/* Column 1: List of features */}
+        {/* Column 1: About Us */}
         <div className="footer__column-1">
-          <h5>Heading-1</h5>
+          <h5>About Us</h5>
           <ul>
-            <li>Use these free 3d,bottle,stereoscopic </li>
-            <li>stereoscopic PNG transparent background.</li>
-            <li>All images commercial use available</li>
-            <li>premium member, copyright guarantee.</li>
-            <li>All images commercial use available</li>
+            <li>Our Story</li>
+            <li>Sustainability</li>
+            <li>Press</li>
+            <li>Careers</li>
+            <li>Contact</li>
           </ul>
         </div>
 
-        {/* Column 2: List of features */}
+        {/* Column 2: Customer Care */}
         <div className="footer__column-2">
-          <h5>Heading-2</h5>
+          <h5>Customer Care</h5>
           <ul>
-            <li>Use these free 3d,bottle,stereoscopic </li>
-            <li>stereoscopic PNG transparent background.</li>
-            <li>All images commercial use available</li>
-            <li>premium member, copyright guarantee.</li>
+            <li>FAQs</li>
+            <li>Shipping & Returns</li>
+            <li>Order Tracking</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
 
-        {/* Column 3: List of features */}
+        {/* Column 3: Our Products */}
         <div className="footer__column-3">
-          <h5>Heading-3</h5>
+          <h5>Our Products</h5>
           <ul>
-            <li>Use these free 3d,bottle,stereoscopic </li>
-            <li>stereoscopic PNG transparent background.</li>
-            <li>All images commercial use available</li>
+            <li>Serums</li>
+            <li>Moisturizers</li>
+            <li>Cleansers</li>
           </ul>
         </div>
 
-        {/* Column 4: App icons */}
+        {/* Column 4: Get Our App */}
         <div className="footer__column-4">
-          <h5>Heading-4</h5>
+          <h5>Get Our App</h5>
 
           <i className="ri-google-play-fill"></i>
           <i className="ri-apple-fill"></i>

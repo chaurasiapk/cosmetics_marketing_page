@@ -20,7 +20,7 @@ const Cards = (props) => {
           <h5 style={{ textAlign: "center" }}>
             {props.heading}
             <br />
-            {props.type}
+            {/* {props.type} */}
           </h5>
         </div>
         <div className="card__rating">
@@ -44,27 +44,27 @@ export const LowerPage1 = () => {
   // Product data array
   const product = [
     {
-      heading: "Product-Heading-1",
+      heading: "Radiant Glow Serum",
       price: 125.95,
-      type: "type-1",
+      type: "Serum",
       source: image2,
     },
     {
-      heading: "Product-Heading-2",
+      heading: "HydraBoost Moisturizer",
       price: 125.95,
-      type: "type-2",
+      type: "Moisturizer",
       source: image3,
     },
     {
-      heading: "Product-Heading-3",
+      heading: "Velvet Touch Cleanser",
       price: 125.95,
-      type: "type-3",
+      type: "Cleanser",
       source: image4,
     },
     {
-      heading: "Product-Heading-4",
+      heading: "Luminous Night Cream",
       price: 125.95,
-      type: "type-4",
+      type: "Night Cream",
       source: image5,
     },
   ];

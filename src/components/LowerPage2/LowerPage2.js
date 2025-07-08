@@ -36,27 +36,27 @@ export const LowerPage2 = () => {
       class: "item-oud",
       image: image1,
       heading:
-        "Pngtree provides HQ Amazing Skin care product set transparent images. Browse our Skin care product set collection.",
+        "Experience the science of beauty with dermatologist-approved formulas.",
       describtion:
-        "Use these free 3d,bottle,stereoscopic PNG transparent background. All images commercial use available for premium member, copyright guarantee.",
+        "Our products are cruelty-free, paraben-free, and designed for all skin types. Unlock your best skin today!",
     },
 
     {
       class: "item-even",
       image: image6,
       heading:
-        "Pngtree provides HQ Amazing Skin care product set transparent images. Browse our Skin care product set collection.",
+        "Experience the science of beauty with dermatologist-approved formulas.",
       describtion:
-        "Use these free 3d,bottle,stereoscopic PNG transparent background. All images commercial use available for premium member, copyright guarantee.",
+        "Our products are cruelty-free, paraben-free, and designed for all skin types. Unlock your best skin today!",
     },
 
     {
       class: "item-oud",
       image: image7,
       heading:
-        "Pngtree provides HQ Amazing Skin care product set transparent images. Browse our Skin care product set collection.",
+        "Experience the science of beauty with dermatologist-approved formulas.",
       describtion:
-        "Use these free 3d,bottle,stereoscopic PNG transparent background. All images commercial use available for premium member, copyright guarantee.",
+        "Our products are cruelty-free, paraben-free, and designed for all skin types. Unlock your best skin today!",
     },
   ];
 

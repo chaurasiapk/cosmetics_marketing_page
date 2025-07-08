@@ -10,10 +10,9 @@ export const LowerPage3 = () => {
     <div className="lower-page3__container">
       <div className="lower-page3">
         <div className="lower-page3__content">
-          <h4>Pngtree provides HQ Amazing Skin care</h4>
+          <h4>Unleash Your Inner Glow</h4>
           <p>
-            Use these free 3d,bottle,stereoscopic PNG transparent background.
-            All images commercial use available for premium member,{" "}
+            Nourish, hydrate, and rejuvenate with our exclusive cosmetics collection.
           </p>
           <Button1 label="click" />
         </div>

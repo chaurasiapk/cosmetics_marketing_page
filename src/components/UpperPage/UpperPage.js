@@ -13,8 +13,7 @@ export const UpperPage = () => {
         <div className="upper-page__left">
           <h1>Discover Good Karma</h1>
           <p>
-            Lorazepam may increase the risk of serious or life-threatening
-            breathing problems,{" "}
+            Reveal your natural radiance with our luxurious skincare essentials.
           </p>
           <Button1 label="Buy Now" />
           <button className="upper-page__see-more">See more...</button>
