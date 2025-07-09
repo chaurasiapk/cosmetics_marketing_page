@@ -46,8 +46,17 @@ export const NavBar = () => {
         {/* Right section: Menu and hamburger icon */}
         <div className="navbar__right">
           <div className="navbar__menu-bar">
-            <input type="checkbox" id="checkBox" />
+            <input type="checkbox" id="checkBox" checked={clicked} onChange={() => {}} />
             <ul>
+              {/* Cross icon for closing sidebar */}
+              <button
+                className="sidebar-close"
+                aria-label="Close menu"
+                onClick={() => setClicked(false)}
+                type="button"
+              >
+                <i className="ri-close-line"></i>
+              </button>
               <li>
                 <button className="btn">Shop</button>
               </li>
